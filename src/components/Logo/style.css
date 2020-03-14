@@ -1,0 +1,19 @@
+.logo {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    transition: all .7s;
+}
+
+.sub-logo {
+    color: var(--color);
+}
+
+.logo:hover .sub-logo {
+    color: #fff;
+}
+
+.logo:hover {
+    color: var(--color);
+}
