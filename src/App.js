@@ -27,11 +27,11 @@ export default class App extends Component {
           result: response.data
         })
       })
-    } else {
-      this.setState({
-        result: ''
-      })
     }
+
+    this.setState({
+      result: ''
+    })
   }
 
   render() {
