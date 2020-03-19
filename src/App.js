@@ -8,15 +8,6 @@ export default class App extends Component {
 
   state = {
     result: {},
-    ip: ""
-  }
-
-  async componentDidMount() {
-    await axios.get('https://freegeoip.app/json/').then((response) => {
-      this.setState({
-        ip: response.data.ip
-      })
-    })
   }
 
   handleInputChange = async (e) => {
@@ -27,11 +18,11 @@ export default class App extends Component {
           result: response.data
         })
       })
+    } else {
+      this.setState({
+        result: ''
+      })
     }
-
-    this.setState({
-      result: ''
-    })
   }
 
   render() {
@@ -45,7 +36,6 @@ export default class App extends Component {
             <input type="text" placeholder="Ex. 01001000" name="cep" onChange={ e => this.handleInputChange(e) }/>
           </div>
         </div>
-        <p style={{ textAlign: "center", color: "#fff", fontWeight: "bold" }}> Seu IP: { this.state.ip }</p>
         <br/>
         <div className="infos">
           <p className="item">CEP: <br/><span className="text">{ result.cep }</span></p>
@@ -54,6 +44,8 @@ export default class App extends Component {
           <p className="item">LOCALIDADE: <br/><span className="text">{ result.localidade }</span></p>
           <p className="item">UF: <br/><span className="text">{ result.uf }</span></p>
         </div>
+
+        <span style={{ color: "#c40214", fontSize: "13px" }}>Dados fornecidos por <br/><a href="https://viacep.com.br/" style={{ color: "#fff", textDecoration: "none" }}>ViaCep</a></span>
     </div>
   );
   }

@@ -5,10 +5,11 @@
 </div>
 
 <h2> WHAT IS ? </h2>
-<p> • Ceeper is a zip code consultant developed using <a href="https://viacep.com.br/" target="__blank">VIA CEP</a></p>
+<p> • Ceeper is a zip code consultant developed using <a href="https://viacep.com.br/" target="__blank">VIA CEP</a>, it works only to Brazil states.</p>
 
 <h2>IMAGES</h2>
 <div align="center">
-        
+        <img src="https://i.imgur.com/vsDLy9d.png" alt="Ceeper"/>
+        <img src="https://i.imgur.com/jvp7vrZg.png" alt="Ceeper"/>
 </div>
 
