@@ -9,7 +9,7 @@
 
 <h2>IMAGES</h2>
 <div align="center">
-        <img src="https://i.imgur.com/vsDLy9d.png" alt="Ceeper" width="220"/>
-        <img src="https://i.imgur.com/jvp7vrZg.png" alt="Ceeper" width="220"/>
+        <img src="https://i.imgur.com/vsDLy9d.png" alt="Ceeper" width="520"/>
+        <img src="https://i.imgur.com/jvp7vrZg.png" alt="Ceeper" width="520"/>
 </div>
 
